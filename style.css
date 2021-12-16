@@ -412,7 +412,7 @@ nav ul li a {
 
 
 /*INI UNTUK UKURAN HP*/
-@media screen and (max-width: 576px){
+@media screen and (max-width: 320px){
 	nav {
 		display: flex;
 		width: 100%;
@@ -521,6 +521,116 @@ nav ul li a {
 
 }
 /*AKHIR RESPONSIVE UKURAN HP*/
+
+@media screen and (max-width: 576px){
+	nav {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		grid-area: sidebar;
+		height: 30px;
+		background-color: #333;
+		opacity: 0.95;
+
+	}
+
+	nav .menu-toggle {
+		margin-right: 40px;
+	}
+
+
+	nav .logo {
+		color: white;
+		position: relative;
+		left: -80px;
+		margin-left: 0px;
+	}
+
+		nav ul li {
+		padding: 15px 0px 20px 0px;
+		text-align: center;
+		width: 240px;
+		height:40px;
+		opacity: 0.8;
+	}
+
+	nav ul li a {
+		padding: 50px 60px 30px 60px;
+
+	}
+
+	nav ul li:hover {
+	padding-top: 50px;
+	height: 50px;
+	color: white;
+	background-color: #334;
+
+}
+
+	.sidebar {
+	width: 580px;
+	height: 90vh;
+	background-image: url("assets/townjapan2.jpg");
+	background-size: cover;
+	grid-area: sidebar;
+}
+
+	.image-profile {
+	margin-right: 270px;
+	align-items: center;
+}
+
+	.content-2 {
+		display: none;
+	}
+
+	.about-me {
+		justify-content: center;
+		margin-left: 50px;
+		flex-direction: column;
+	}
+
+	.about-me p {
+		border-radius: 10px;
+	}
+
+	.about-me p:nth-child(1)  {
+	width: 70%;
+	margin-top: 80px;
+	margin-left: -500px;
+	padding:15px;
+	background:linear-gradient(#3333ff, #6666ff); 
+	color: white;
+	animation: animasiSlide 2s ease;
+
+}
+
+@keyframes animasiSlide {
+	from {
+
+	margin-left: -500px;
+
+}
+
+	to {
+
+	margin-left: -30px;
+
+	}
+}
+
+	.about-me p:nth-child(2)  {
+	width: 70%;
+	margin-top: 30px;
+	margin-left: 0;
+	margin-left: 70px;
+	padding: 15px;
+	background:linear-gradient(#3333ff, #6666ff); 
+	color: white;
+}
+
+}
+
 
 
 
