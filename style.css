@@ -48,7 +48,7 @@ nav {
 	color: white;
 	grid-area: nav;
 	background-color: ;
-	border:1px solid red;
+	
 }
 
 nav .logo {
@@ -63,9 +63,9 @@ nav ul {
 	padding-top: 12px;
 	display: flex;
 	list-style: none;
-	width: 55%;
+	width: 70%;
 	justify-content: space-between;
-	border:1px solid red;
+	
 }
 
 nav ul li a {
@@ -74,12 +74,11 @@ nav ul li a {
 	font-family: 'Roboto Mono', monospace;
 	color: white;
 	text-decoration: none;
-	border:1px solid red;
 }
 
 nav ul li a:hover{
 	color: red;
-	border:1px solid red;
+	
 }
 
 .menu-toggle {
@@ -142,12 +141,10 @@ nav ul li a:hover{
 /*INI SIDEBAR*/
 .sidebar {
 	width: 490px;
-	height: 550px;
-	margin-right: 2px;
+	height: 100%;
 	background-image: url("assets/townjapan2.jpg");
-	background-size: cover;`	
+	background-size: cover;
 	grid-area: sidebar;
-	border:1px solid red;
 }
 
 .image-profile {
@@ -178,7 +175,6 @@ nav ul li a:hover{
 /*INI CONTENT*/
 .content-2 {
 	position: relative;
-	border:1px solid red;
 	height: 550px;
 	grid-area: content;
 }
@@ -186,10 +182,10 @@ nav ul li a:hover{
 .judul {
 	position: absolute;
 	font-family: 'Roboto Mono', monospace;
-	color: black;
+	color: white;
 	font-size: 48px;
-	margin: 0px 15px 0 20px;
-	border:1px solid red;
+	margin: 20px 15px 0px 20px;
+	
 
 }
 
@@ -211,7 +207,6 @@ section {
 }
 
 .about-me {
-
 	justify-content: center;
 	display: flex;
 	font-family: 'Roboto Mono', monospace;
@@ -255,8 +250,12 @@ nav ul {
 	padding-top: 12px;
 	display: flex;
 	list-style: none;
-	width: 70%;
+	width: 75%;
 	justify-content: space-around;
+}
+
+nav ul li {
+
 }
 
 	.sidebar {
@@ -283,25 +282,30 @@ nav ul {
 /*INI UNTUK UKURAN LAPTOP*/
 @media screen and (max-width: 992px) {
 
+nav {
+	margin-left: -30px;
+}
+
 nav .logo {
-	border:1px solid red;
-	position: absolute;
+	position: relative;
 	font-size: 20px;
 	font-family: 'Roboto Mono', monospace;
 	margin-right: 0px;
-	left: 500px;
+	left:-380px;
 }
 
 nav ul {
 	display: flex;
 	list-style: none;
-	width: 100%;
+	width: 150%;
 	justify-content: space-around;
+	margin-left: -80px;
+	margin-right: -32px;
 }
 
 nav ul li a {
-	padding-top: 12px;
-	padding: 8px;
+	padding: 12px 2px 12px 0px;
+	width: 100%;
 	font-size: 17px;
 	font-family: 'Roboto Mono', monospace;
 	color: white;
@@ -335,8 +339,12 @@ nav ul li a {
 	}
 
 	nav .logo {
-		position: relative;
-		left: 50px;
+	position: relative;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+	margin-right: 0px;
+	left:-370px;
+
 	}
 
 	nav ul{
